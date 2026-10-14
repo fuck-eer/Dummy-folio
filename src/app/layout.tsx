@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next"
 import { Geist, Geist_Mono, Instrument_Serif } from "next/font/google"
 
 import { JsonLd } from "@/components/json-ld"
+import { PageBackdrop } from "@/components/scene/page-backdrop"
 import { SiteFooter } from "@/components/site-footer"
 import { SiteHeader } from "@/components/site-header"
 import { ThemeProvider } from "@/components/theme-provider"
@@ -92,7 +93,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full overflow-x-clip bg-background text-foreground">
         <ThemeProvider>
-          <div className="flex min-h-full flex-col">
+          <PageBackdrop />
+          <div className="relative z-10 flex min-h-full flex-col">
             <a href="#main" className="skip-link">
               Skip to content
             </a>

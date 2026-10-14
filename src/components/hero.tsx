@@ -1,6 +1,6 @@
 "use client"
 
-import { HeroArt } from "@/components/hero-art"
+import { HeroVisual } from "@/components/scene/hero-visual"
 import { MailtoLink } from "@/components/mailto-link"
 import { Reveal } from "@/components/reveal"
 import { SITE } from "@/lib/site"
@@ -70,9 +70,7 @@ export function Hero() {
             </p>
           </Reveal>
         </div>
-        <Reveal immediate delay={0.15}>
-          <HeroArt />
-        </Reveal>
+        <HeroVisual />
       </div>
     </section>
   )

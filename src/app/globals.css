@@ -183,33 +183,8 @@
   transform: translateY(-3px);
 }
 
-.hero-art .semi {
-  transform-origin: 312px 382px;
-  transform: rotate(-8deg);
-  transition: transform 420ms ease;
-}
-
-.hero-art:hover .semi {
-  transform: rotate(-8deg) translateY(-6px);
-}
-
-.cursor-blink {
-  animation: cursor-blink 1.15s steps(1, end) infinite;
-}
-
 .pulse-dot {
   animation: pulse-dot 2.4s ease-in-out infinite;
-}
-
-@keyframes cursor-blink {
-  0%,
-  45% {
-    opacity: 1;
-  }
-  50%,
-  100% {
-    opacity: 0;
-  }
 }
 
 @keyframes pulse-dot {
@@ -227,21 +202,14 @@
     scroll-behavior: auto;
   }
 
-  .lift,
-  .hero-art .semi {
+  .lift {
     transition: none;
   }
 
-  .lift:hover,
-  .hero-art:hover .semi {
+  .lift:hover {
     transform: none;
   }
 
-  .hero-art .semi {
-    transform: rotate(-8deg);
-  }
-
-  .cursor-blink,
   .pulse-dot {
     animation: none;
   }
